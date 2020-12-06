@@ -9,6 +9,7 @@ services:
     volumes:
       - "/home/daniel/mcTest2/velocity1/server:/server"
       - "/etc/timezone:/etc/timezone:ro"
+      - "/home/daniel/mcTest2/_templates/velocity/velocity.toml:/config/velocity.toml:ro"
     environment:
       TYPE: Velocity
     restart: unless-stopped
@@ -19,6 +20,9 @@ services:
     volumes:
       - "/home/daniel/mcTest2/paper1/data:/data"
       - "/etc/timezone:/etc/timezone:ro"
+      - "/home/daniel/mcTest2/_templates/paper/ops.json:/config/ops.json:ro"
+      - "/home/daniel/mcTest2/_templates/paper/spigot.yml:/config/spigot.yml:ro"
+      - "/home/daniel/mcTest2/_templates/paper/whitelist.json:/config/whitelist.json:ro"
     environment:
       EULA: "TRUE"
       TYPE: PAPER
@@ -36,6 +40,9 @@ services:
     volumes:
       - "/home/daniel/mcTest2/paper2/data:/data"
       - "/etc/timezone:/etc/timezone:ro"
+      - "/home/daniel/mcTest2/_templates/paper/ops.json:/config/ops.json:ro"
+      - "/home/daniel/mcTest2/_templates/paper/spigot.yml:/config/spigot.yml:ro"
+      - "/home/daniel/mcTest2/_templates/paper/whitelist.json:/config/whitelist.json:ro"
     environment:
       EULA: "TRUE"
       TYPE: PAPER
@@ -53,6 +60,9 @@ services:
     volumes:
       - "/home/daniel/mcTest2/paper3/data:/data"
       - "/etc/timezone:/etc/timezone:ro"
+      - "/home/daniel/mcTest2/_templates/paper/ops.json:/config/ops.json:ro"
+      - "/home/daniel/mcTest2/_templates/paper/spigot.yml:/config/spigot.yml:ro"
+      - "/home/daniel/mcTest2/_templates/paper/whitelist.json:/config/whitelist.json:ro"
     environment:
       EULA: "TRUE"
       TYPE: PAPER
