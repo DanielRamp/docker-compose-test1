@@ -1,0 +1,3 @@
+# Enable Bungeecord
+settings:
+  bungeecord: true
