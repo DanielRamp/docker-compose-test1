@@ -28,6 +28,7 @@ services:
       CONSOLE: "false"
       #TZ: Europe/Zurich
       ONLINE_MODE: "FALSE"
+      MODPACKS: "https://myles.us/ViaVersion/latest.jar"
     restart: unless-stopped
     depends_on:
       - velocity1
