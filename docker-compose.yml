@@ -33,6 +33,8 @@ services:
       #TZ: Europe/Zurich
       ONLINE_MODE: "FALSE"
     restart: unless-stopped
+    depends_on:
+      - velocity1
   paper2:
     image: itzg/minecraft-server
     ports:
@@ -53,6 +55,8 @@ services:
       #TZ: Europe/Zurich
       ONLINE_MODE: "FALSE"
     restart: unless-stopped
+    depends_on:
+      - velocity1
   paper3:
     image: itzg/minecraft-server
     ports:
@@ -73,3 +77,5 @@ services:
       #TZ: Europe/Zurich
       ONLINE_MODE: "FALSE"
     restart: unless-stopped
+    depends_on:
+      - velocity1
