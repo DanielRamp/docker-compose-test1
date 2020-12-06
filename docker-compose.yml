@@ -29,3 +29,37 @@ services:
       #TZ: Europe/Zurich
       ONLINE_MODE: "FALSE"
     restart: unless-stopped
+  paper2:
+    image: itzg/minecraft-server
+    ports:
+      - "25566:25565"
+    volumes:
+      - "/home/daniel/mcTest2/paper2/data:/data"
+      - "/etc/timezone:/etc/timezone:ro"
+    environment:
+      EULA: "TRUE"
+      TYPE: PAPER
+      VERSION: 1.8.8
+      #VERSION: 1.16.4
+      # needed for Paper versions before 1.14
+      CONSOLE: "false"
+      #TZ: Europe/Zurich
+      ONLINE_MODE: "FALSE"
+    restart: unless-stopped
+  paper3:
+    image: itzg/minecraft-server
+    ports:
+      - "25567:25565"
+    volumes:
+      - "/home/daniel/mcTest2/paper3/data:/data"
+      - "/etc/timezone:/etc/timezone:ro"
+    environment:
+      EULA: "TRUE"
+      TYPE: PAPER
+      #VERSION: 1.8.8
+      VERSION: 1.16.4
+      # needed for Paper versions before 1.14
+      CONSOLE: "false"
+      #TZ: Europe/Zurich
+      ONLINE_MODE: "FALSE"
+    restart: unless-stopped
