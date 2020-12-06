@@ -28,7 +28,8 @@ services:
       CONSOLE: "false"
       #TZ: Europe/Zurich
       ONLINE_MODE: "FALSE"
-      MODPACKS: "https://myles.us/ViaVersion/latest.jar"
+      #MODPACKS: "https://myles.us/ViaVersion/latest.jar"
+      # does not work, manual download in plugins folder
     restart: unless-stopped
     depends_on:
       - velocity1
