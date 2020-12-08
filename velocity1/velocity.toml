@@ -59,8 +59,9 @@ ping-passthrough = "DISABLED"
 	paper1 = "paper1:25565"
 	paper2 = "paper2:25565"
 	paper3 = "paper3:25565"
+	fba1 = "fba1:25565"
 	# In what order we should try servers when a player logs in or is kicked from aserver.
-	try = ["paper1", "paper2", "paper3"]
+	try = ["paper1", "paper2", "paper3", "fba1"]
 
 [forced-hosts]
 	"minigames.example.com" = ["paper1"]
