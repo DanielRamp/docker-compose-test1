@@ -71,3 +71,20 @@ services:
     restart: unless-stopped
     depends_on:
       - velocity1
+  ftba1:
+    image: itzg/minecraft-server:multiarch
+    ports:
+      - "25568:25565"
+    volumes:
+      - "./ftba1/:/data"
+      - "/etc/timezone:/etc/timezone:ro"
+    environment:
+      EULA: "TRUE"
+      TYPE: FTBA
+      FTB_MODPACK_ID: 35 # Revelation
+      #FTB_MODPACK_VERSION_ID: 174 # 3.4.0 - Latest at 08.12.2020
+      # Minecraft Version 1.12.2
+      ONLINE_MODE: "FALSE"
+    restart: unless-stopped
+    depends_on:
+      - velocity1
